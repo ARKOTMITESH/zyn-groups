@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZYN Groups | Building Industries, Designing Futures</title>
+    <meta name="description" content="Innovating across Safety, Interiors, Construction & Manufacturing.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-logo">ZYN GROUPS</div>
+        <div class="loader-progress"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">ZYN</span><span class="logo-groups">GROUPS</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#divisions">Divisions</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-btn"><i class="fas fa-moon"></i></button>
+                <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main id="main-container">
+        
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-content">
+                <h1 class="hero-title gsap-reveal">
+                    <span class="gradient-text">ZYN</span> GROUPS
+                </h1>
+                <p class="hero-subtitle gsap-reveal">
+                    Powering Industries. Designing Experiences. Delivering Excellence.<br>
+                    <span class="tagline">A diversified enterprise in Safety, Interiors, Construction & Manufacturing</span>
+                </p>
+                <div class="hero-btns gsap-reveal">
+                    <a href="#divisions" class="btn btn-primary">Explore Divisions</a>
+                    <a href="#contact" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <!-- About Section (3D Cube) -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header text-center gsap-fade-up">
+                    <h2 class="section-title">The Power of <span class="gradient-text">ZYN</span></h2>
+                    <p class="section-desc">A diverse conglomerate dedicated to excellence across four major industries.</p>
+                </div>
+                
+                <div class="cube-container gsap-fade-up">
+                    <div class="cube">
+                        <div class="cube-face front">
+                            <i class="fas fa-globe"></i>
+                            <h3>ZYN GROUPS</h3>
+                            <p class="cube-tagline">Building Industries, Designing Futures</p>
+                        </div>
+                        <div class="cube-face right">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Zain Health & Safety</h3>
+                        </div>
+                        <div class="cube-face left">
+                            <i class="fas fa-couch"></i>
+                            <h3>Nest Interiors</h3>
+                        </div>
+                        <div class="cube-face top">
+                            <i class="fas fa-city"></i>
+                            <h3>ZYN Construction</h3>
+                        </div>
+                        <div class="cube-face bottom">
+                            <i class="fas fa-cookie-bite"></i>
+                            <h3>ZYN Chocolates</h3>
+                        </div>
+                        <div class="cube-face back">
+                            <i class="fas fa-certificate"></i>
+                            <h3>ISO Certified</h3>
+                            <p class="cube-tagline">Trusted Global Brand</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divisions Section (3D Cards) -->
+        <section class="divisions" id="divisions">
+            <div class="container">
+                <div class="section-header gsap-fade-up">
+                    <h2 class="section-title">Our <span class="gradient-text">Divisions</span></h2>
+                </div>
+                
+                <div class="cards-grid">
+                    <!-- Card 1 -->
+                    <div class="division-card card-safety gsap-fade-up">
+                        <div class="card-glass">
+                            <div class="card-icon"><img src="assets/safety.png" alt="Safety"></div>
+                            <h3>Zain Health & Safety Institution</h3>
+                            <p>Industrial safety, compliance, and professional training solutions.</p>
+                            <a href="#services" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card-bg-shape"></div>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="division-card card-interiors gsap-fade-up">
+                        <div class="card-glass">
+                            <div class="card-icon"><img src="assets/interiors.png" alt="Interiors"></div>
+                            <h3>Nest Interiors</h3>
+                            <p>Luxury interior design and breathtaking space transformations.</p>
+                            <a href="#services" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card-bg-shape"></div>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="division-card card-construction gsap-fade-up">
+                        <div class="card-glass">
+                            <div class="card-icon"><img src="assets/construction.png" alt="Construction"></div>
+                            <h3>ZYN Construction</h3>
+                            <p>Premium infrastructure, residential & commercial development.</p>
+                            <a href="#services" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card-bg-shape"></div>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="division-card card-chocolates gsap-fade-up">
+                        <div class="card-glass">
+                            <div class="card-icon"><img src="assets/chocolates.png" alt="Chocolates"></div>
+                            <h3>ZYN Chocolates Manufacturing</h3>
+                            <p>Premium chocolate manufacturing and exquisite branding.</p>
+                            <a href="#services" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card-bg-shape"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header text-center gsap-fade-up">
+                    <h2 class="section-title">Core <span class="gradient-text">Expertise</span></h2>
+                </div>
+                
+                <div class="services-accordion gsap-fade-up">
+                    <div class="accordion-item active">
+                        <div class="accordion-header">
+                            <h3><i class="fas fa-hard-hat text-blue"></i> Safety Audits & Training</h3>
+                            <span class="icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Comprehensive industrial safety audits, risk assessments, and certified training programs designed to keep your workforce secure.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3><i class="fas fa-paint-roller text-gold"></i> Premium Space Design</h3>
+                            <span class="icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Bespoke interior design services mapping from conceptual 3D renders to final execution for luxury homes and corporate offices.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3><i class="fas fa-hammer text-orange"></i> Turnkey Construction</h3>
+                            <span class="icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>End-to-end construction services managing infrastructure projects from ground-breaking to final handover with zero compromises on quality.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3><i class="fas fa-gift text-brown"></i> Artisanal Confectionery</h3>
+                            <span class="icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Crafting luxurious, premium chocolate blends for corporate gifting, retail branding, and exclusive events.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects / Portfolio -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header gsap-fade-up">
+                    <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+                    <div class="project-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="interiors">Interiors</button>
+                        <button class="filter-btn" data-filter="construction">Construction</button>
+                        <button class="filter-btn" data-filter="manufacturing">Manufacturing</button>
+                    </div>
+                </div>
+                
+                <div class="masonry-grid gsap-fade-up">
+                    <div class="portfolio-item interiors">
+                        <img src="assets/interiors.png" alt="Luxury Living Room" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Aura Penthouse</h3>
+                            <p>Nest Interiors</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item construction">
+                        <img src="assets/construction.png" alt="Commercial Building" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Skyline Tower</h3>
+                            <p>ZYN Construction</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item manufacturing">
+                        <img src="assets/chocolates.png" alt="Premium Chocolates" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Gold Series Collection</h3>
+                            <p>ZYN Chocolates Manufacturing</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item interiors">
+                        <img src="assets/interiors.png" alt="Corporate Office" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Nexus Tech HQ</h3>
+                            <p>Nest Interiors</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item construction">
+                        <img src="assets/construction.png" alt="Infrastructure" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Grand Bridge Project</h3>
+                            <p>ZYN Construction</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item interiors">
+                        <img src="assets/safety.png" alt="Safety Audit" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Global Safety Compliance</h3>
+                            <p>Zain Health & Safety Institution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us (Counters) -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item gsap-fade-up">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <h2 class="counter" data-target="1500">0</h2>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-item gsap-fade-up">
+                        <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                        <h2 class="counter" data-target="350">0</h2>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item gsap-fade-up">
+                        <div class="stat-icon"><i class="fas fa-award"></i></div>
+                        <h2 class="counter" data-target="25">0</h2>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="stat-item gsap-fade-up">
+                        <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                        <h2 class="counter" data-target="4">0</h2>
+                        <p>Global Divisions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header text-center gsap-fade-up">
+                    <h2 class="section-title">Client <span class="gradient-text">Voices</span></h2>
+                </div>
+                
+                <div class="testimonial-carousel gsap-fade-up">
+                    <div class="testimonial-track">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">"Nest Interiors completely transformed our office space. The attention to detail and modern aesthetic was exactly what we needed."</p>
+                            <div class="client-info">
+                                <h4>Sarah Jenkins</h4>
+                                <span>CEO, TechFlow</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">"ZYN Construction delivered our new warehouse ahead of schedule. Their professionalism is unmatched in the industry."</p>
+                            <div class="client-info">
+                                <h4>Mark Roberts</h4>
+                                <span>Logistics Director</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p class="testimonial-text">"The premium corporate gifting from ZYN Chocolates Manufacturing left a lasting impression on our VIP clients. Exquisite taste and packaging."</p>
+                            <div class="client-info">
+                                <h4>Elena M.</h4>
+                                <span>Event Coordinator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info gsap-fade-up">
+                        <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+                        <p>Ready to start your next project? Reach out to our specialized divisions today.</p>
+                        
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4>Headquarters</h4>
+                                    <p>Shanthi Complex, Gandhi Bomma, Nellore, 524001</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p>contact@zyngroups.com</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div>
+                                    <h4>Call Us</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container glass-panel gsap-fade-up">
+                        <form id="contactForm" action="contact.php" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" placeholder=" " required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder=" " required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <select name="division" id="division" required>
+                                    <option value="" disabled selected>Select Division</option>
+                                    <option value="Safety">Zain Health & Safety Institution</option>
+                                    <option value="Interiors">Nest Interiors</option>
+                                    <option value="Construction">ZYN Construction</option>
+                                    <option value="Chocolates">ZYN Chocolates Manufacturing</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" rows="4" placeholder=" " required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100" id="whatsapp-btn">Send via WhatsApp <i class="fab fa-whatsapp"></i></button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <span class="logo-text">ZYN</span>
+                        <p>Building Industries, Designing Futures.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Divisions</h4>
+                        <ul>
+                            <li><a href="#">Health & Safety</a></li>
+                            <li><a href="#">Nest Interiors</a></li>
+                            <li><a href="#">ZYN Construction</a></li>
+                            <li><a href="#">ZYN Chocolates Manufacturing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#projects">Portfolio</a></li>
+                            <li><a href="#services">Careers</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2026 ZYN Groups. All Rights Reserved.</p>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Scripts -->
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
+
